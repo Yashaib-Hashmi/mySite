@@ -1,0 +1,4 @@
+[
+    { "id": 1, "name": "Ambulance A", "lat": 51.505, "lng": -0.09 },
+    { "id": 2, "name": "Ambulance B", "lat": 51.515, "lng": -0.1 }
+]

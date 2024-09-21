@@ -1,0 +1,49 @@
+{
+    "ambulances": [
+      {
+        "id": 1,
+        "name": "Ambulance 1",
+        "region": "Chicago",
+        "type": "ICU",
+        "price": 300,
+        "image": "/img/ambu2.jpg",
+        "specialization": "medium"
+      },
+      {
+        "id": 2,
+        "name": "Ambulance 2",
+        "region": "New York",
+        "type": "ICCU",
+        "price": 500,
+        "image": "/img/ambu1.webp",
+        "specialization": "Advance"
+      },
+      {
+        "id": 3,
+        "name": "Ambulance 3",
+        "region": "Los Angeles",
+        "type": "Basic",
+        "price": 200,
+        "image": "/img/ambu3.jpg",
+        "specialization": "Basic"
+      },
+      {
+        "id": 4,
+        "name": "Ambulance 4",
+        "region": "Houston",
+        "type": "ICU",
+        "price": 250,
+        "image": "/img/ambu4.jpeg",
+        "specialization": "Basic"
+      },
+      {
+        "id": 5,
+        "name": "Ambulance 5",
+        "region": "San Francisco",
+        "type": "ICCU",
+        "price": 230,
+        "image": "/img/ambu5.jpg",
+        "specialization": "Basic"
+      }
+    ]
+  }

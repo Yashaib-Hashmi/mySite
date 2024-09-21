@@ -1,0 +1,1475 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    padding: 0px 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 1.1em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    animation: fadeIn 2.5s ease-in;
+}
+
+.hero .btn-primary {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: #ffdd57;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #ffcc33;
+}
+
+/* About Us */
+#about {
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+/* Image Gallery */
+#gallery img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Feedback Form */
+#feedback .form-group {
+    margin-bottom: 15px;
+}
+
+#feedback .form-control {
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+#feedback button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#feedback button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Us */
+#contact p {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Sitemap */
+#sitemap ul {
+    padding-left: 0;
+}
+
+#sitemap ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#sitemap ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#sitemap ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Card Styles (For Ambulance Listings) */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1.1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* Footer Styling */
+.footer {
+    background-color: black;
+    padding: 40px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.footer h5 {
+    font-size: 1.3em;
+    color: #ffdd57;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer h5:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+    animation: expandLine 1s ease-in-out forwards;
+}
+
+@keyframes expandLine {
+    0% { width: 0; }
+    100% { width: 40px; }
+}
+
+.footer-links,
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li,
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ffdd57;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    font-size: 1.5em;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #ffdd57;
+    transform: rotate(360deg);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        font-size: 0.9em;
+    }
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+
+
+
+.hero-section {
+    background: url('ambulance-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Animated Text */
+.animated-text {
+    font-size: 2.5em;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Featured Ambulance Section */
+.featured-section .card {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto;
+}
+
+/* Search Section Styling */
+.search-section input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-section .btn {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.search-section .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+custom-navbar {
+    background-color: #007bff; /* Main background color */
+    padding: 0px 0px;
+    border-bottom: 3px solid #0056b3; /* Optional: border color at the bottom for effect */
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff; /* Brand name color */
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #ffdd57; /* Brand hover color */
+}
+
+.custom-navbar .nav-link {
+    color: #fff; /* Nav item color */
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffdd57; /* Nav item hover color */
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: background color on hover */
+}
+
+/* Navbar Toggler (for mobile view) */
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Toggler border color */
+}
+.container {
+    margin-top: 50px; /* Adds some top margin */
+    margin-bottom: 50px; /* Adds some bottom margin */
+}
+
+/* First Column (Text Content) Styling */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary blue */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8; /* Improves readability */
+    color: #333; /* Darker text color */
+}
+
+/* Second Column (Image) Styling */
+.img-fluid {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
+}
+
+/* Add some extra styling for responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px; /* Slightly smaller heading on smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Slightly smaller text on smaller screens */
+    }
+    
+    .container {
+        padding: 15px; /* Reduces padding on smaller screens */
+    }
+}
+
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+
+
+
+/* Animated Heading Style */
+.animated-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff; /* Customize color */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Adds spacing between letters */
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent; /* Makes the text color transparent for the gradient effect */
+    animation: slideText 4s ease-in-out infinite; /* Adding animation to the text */
+    position: relative;
+}
+
+/* Text Animation Keyframes */
+@keyframes slideText {
+    0% {
+        letter-spacing: 5px;
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        letter-spacing: 5px;
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+/* Subtext Styling */
+.subtext {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: -10px;
+    animation: fadeInSubtext 2s ease-in-out 1;
+}
+
+@keyframes fadeInSubtext {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+custom-card {
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background-color: #fff; /* White background for card */
+}
+
+.custom-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Hover effect */
+.custom-card:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card title styling */
+.custom-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; /* Blue color for title */
+    text-align: center;
+}
+
+/* Card text styling */
+.custom-card .card-text {
+    color: #333;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* General body padding */
+.custom-card .card-body {
+    padding: 20px;
+}
+
+/* Add a subtle gradient background to the card body */
+.custom-card .card-body {
+    background: linear-gradient(135deg, #f9f9f9, #e9ecef);
+}
+
+/* Ensure consistent image size */
+.custom-card img {
+    height: 300px;
+    object-fit: cover; /* Keep image aspect ratio without stretching */
+    width: 100%;
+}
+
+/* Shadow effects on hover */
+.zoom {
+    transition: all 0.3s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+.whats-app {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+/* WhatsApp icon */
+.whatsapp-icon {
+    height: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 2s ease infinite; /* Add bounce animation */
+}
+
+/* Hover effect on WhatsApp button */
+.whatsapp-link:hover .whatsapp-icon {
+    transform: scale(1.1) rotate(10deg); /* Scale and rotate on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Ensure smooth transition on hover */
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Input and textarea animations */
+.contact-form input, .contact-form textarea {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for form inputs */
+.contact-form input:focus, .contact-form textarea:focus {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button animation */
+.animate-button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animate-button:hover {
+    background-color: #0069d9;
+    transform: scale(1.05);
+}
+
+/* Animation for form appearance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animate-button:hover {
+    transform: translateY(-3px);
+    background-color: #0056b3;
+}
+
+/* Map Container Styling */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom animation on map hover */
+.map-container:hover iframe {
+    transform: scale(1.05);
+}
+zoom-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Service Box Styling */
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.service-box:hover {
+    background-color: #f8f9fa;
+}
+
+/* Best Performing Ambulances */
+.best-ambulances {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+
+.best-ambulances li {
+    margin-bottom: 10px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Keyframes for List Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.zoom-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Service Box Styling */
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.service-box:hover {
+    background-color: #f8f9fa;
+}
+
+/* Best Performing Ambulances */
+.best-ambulances img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.best-ambulances img:hover {
+    transform: scale(1.05);
+}
+
+/* Keyframes for List Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Animation for Images */
+.animated {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.animated.fadeIn {
+    opacity: 1;
+    animation: fadeIn 1.2s forwards;
+}
+
+.animated.fadeInLeft {
+    opacity: 1;
+    animation: fadeInLeft 1.2s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.ambulance-img {
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation for zoom effect */
+}
+
+/* Hover animation effect */
+.ambulance-img:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+/* Fade-in animation */
+.animated {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.animated.fadeInLeft {
+    opacity: 1;
+    animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Optional for rounded corners */
+    border: none; /* Remove borders */
+}
+
+/* Adding fade-in animations */
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer-links li {
+    list-style: none;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: #007bff; /* Hover effect */
+  }
+  
+  /* Social Icons Style */
+  .social-icons {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons li a:hover {
+    color: #007bff;
+    transform: scale(1.2); /* Grow on hover */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    padding: 20px 0;
+    background-color:#ffdd57;
+  }
+  
+  /* Animations */
+  .animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .clip
+  {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .quote
+  {
+      text-align: center;
+  }
+  .quote h1
+  {
+      font-size: 95px;
+      color: #fff;
+      margin-bottom: 50px;
+  }
+  .quote a
+  {
+      font-size: 23px;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      padding: 15px 25px;
+      border-radius: 50px;
+      transition: 0.3s ease ;
+  }
+  .quote a:hover
+  {
+      background-color: orange;
+      color: black;
+  }
+  .background-clip
+  {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+  }
+  @media (min-aspect-ratio:16/9)
+  {
+      .background-clip
+      {
+          width: 100%;
+          height: auto;
+      }
+  }
+  
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.ambulance-section {
+    padding: 50px 0;
+}
+
+.ambulance-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ambulance-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ambulance-icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+.ambulance-card h4 {
+    font-weight: bold;
+}
+
+.ambulance-card p {
+    margin-bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Section Styling */
+.ambulance-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/* Card Styling */
+.ambulance-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ambulance-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ambulance-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.ambulance-card h4 {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.ambulance-card p {
+    color: #666;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+/* Fade-In Animation */
+.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#gps-ambulance {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#gps-ambulance h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#map {
+    height: 400px; /* Height for the map */
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Ensure map is responsive */
+@media (max-width: 768px) {
+    #map {
+        height: 300px; /* Reduced height for smaller screens */
+    }
+
+    #gps-ambulance h2 {
+        font-size: 1.5rem;
+    }
+}
+.custom-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+/* Card Hover Effect */
+.custom-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container for Smooth Hover Animation */
+.img-container {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Card Image Styling */
+.card-img-top {
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Image Zoom on Hover */
+.custom-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Title and Text Styling */
+.card-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Additional Animations (optional) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-card {
+    animation: fadeIn 0.5s ease;
+}
+
+
+.container-login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container-register {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Box Styling */
+.form-box {
+
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+/* Heading */
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Input Box Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border-bottom: 2px solid #007bff;
+}
+
+/* Icons inside input fields */
+.input-box i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #666;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ i {
+    color: #007bff;
+}
+
+/* Label for input */
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -18px;
+    left: 10px;
+    color: #007bff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Error Messages */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Animations for form and inputs */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-box {
+    animation: fadeIn 0.6s ease;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
