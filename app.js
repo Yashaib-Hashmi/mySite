@@ -21,7 +21,7 @@ function displayAmbulances(ambulancesToDisplay) {
     ambulanceHTML += `
       <div class="col-md-4">
         <div class="card custom-card zoom mb-4">
-          <img src="${data.image}" class="card-img-top" alt="${data.name}" style="height: 300px; object-fit: cover;">
+          <img src="img/${data.image}" class="card-img-top" alt="${data.name}" style="height: 300px; object-fit: cover;">
           <div class="card-body">
             <h5 class="card-title">${data.name}</h5>
             <p class="card-text">City: ${data.region}</p>
